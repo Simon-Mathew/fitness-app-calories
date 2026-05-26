@@ -44,16 +44,16 @@ export const weekActivity: DayActivity[] = [
 ];
 
 export const recentWorkouts: Workout[] = [
-  { id: 1, name: 'Morning Run',          type: 'Cardio',      duration: '32 min', calories: 310, date: 'Today, 6:30 AM',      icon: '🏃' },
-  { id: 2, name: 'Upper Body Strength',  type: 'Strength',    duration: '45 min', calories: 220, date: 'Yesterday, 7:00 PM',  icon: '🏋️' },
-  { id: 3, name: 'Yoga & Stretch',       type: 'Flexibility', duration: '30 min', calories: 95,  date: 'Wed, 8:00 AM',        icon: '🧘' },
-  { id: 4, name: 'HIIT Circuit',         type: 'Cardio',      duration: '25 min', calories: 280, date: 'Tue, 6:00 PM',        icon: '⚡' },
+  { id: '1', name: 'Morning Run',          type: 'Cardio',      duration: '32 min', calories: 310, date: 'Today, 6:30 AM',      icon: '🏃' },
+  { id: '2', name: 'Upper Body Strength',  type: 'Strength',    duration: '45 min', calories: 220, date: 'Yesterday, 7:00 PM',  icon: '🏋️' },
+  { id: '3', name: 'Yoga & Stretch',       type: 'Flexibility', duration: '30 min', calories: 95,  date: 'Wed, 8:00 AM',        icon: '🧘' },
+  { id: '4', name: 'HIIT Circuit',         type: 'Cardio',      duration: '25 min', calories: 280, date: 'Tue, 6:00 PM',        icon: '⚡' },
 ];
 
 export const goals: Goal[] = [
-  { id: 1, title: 'Weekly Workouts',  current: 4,  target: 5,  unit: 'sessions', icon: '🎯' },
-  { id: 2, title: 'Monthly Distance', current: 38, target: 50, unit: 'km',       icon: '📍' },
-  { id: 3, title: 'Weight Goal',      current: 3,  target: 5,  unit: 'kg lost',  icon: '⚖️' },
+  { id: '1', title: 'Weekly Workouts',  current: 4,  target: 5,  unit: 'sessions', icon: '🎯' },
+  { id: '2', title: 'Monthly Distance', current: 38, target: 50, unit: 'km',       icon: '📍' },
+  { id: '3', title: 'Weight Goal',      current: 3,  target: 5,  unit: 'kg lost',  icon: '⚖️' },
 ];
 
 export const weeklySummary = {

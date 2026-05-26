@@ -44,3 +44,14 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Placeholder card while a section is loading or errored */
+.dashboard__panel-shell {
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

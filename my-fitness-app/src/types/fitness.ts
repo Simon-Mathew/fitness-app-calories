@@ -10,13 +10,13 @@ export interface StatCardData {
 }
 
 export interface Workout {
-  id: number;
+  id: string;  // mapped from MongoDB _id
   name: string;
-  type: 'Cardio' | 'Strength' | 'Flexibility';
-  duration: string;
+  type: 'Cardio' | 'Strength' | 'Flexibility' | 'Sports' | 'Other';
+  duration: string;   // formatted: "32 min"
   calories: number;
-  date: string;
-  icon: string;
+  date: string;       // formatted: "Today, 6:30 AM"
+  icon: string;       // derived from type on the frontend
 }
 
 export interface DayActivity {
@@ -26,7 +26,7 @@ export interface DayActivity {
 }
 
 export interface Goal {
-  id: number;
+  id: string;  // mapped from MongoDB _id
   title: string;
   current: number;
   target: number;
