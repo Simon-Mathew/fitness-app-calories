@@ -1,0 +1,78 @@
+.meal-section {
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Header ─────────────────────────────────────────────────────────────── */
+
+.meal-section__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.meal-section__title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.meal-section__icon {
+  font-size: 20px;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.meal-section__name {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-h);
+}
+
+.meal-section__total {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+/* ── Items list ─────────────────────────────────────────────────────────── */
+
+.meal-section__items {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+}
+
+/* ── Add button ─────────────────────────────────────────────────────────── */
+
+.meal-section__add-btn {
+  align-self: flex-start;
+  margin-top: 14px;
+  background: none;
+  border: 1px dashed var(--border);
+  border-radius: 10px;
+  padding: 7px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  cursor: pointer;
+  font-family: var(--sans);
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
+}
+
+.meal-section__add-btn:hover {
+  border-color: var(--accent-border);
+  color: var(--accent);
+  background: var(--accent-bg);
+}
