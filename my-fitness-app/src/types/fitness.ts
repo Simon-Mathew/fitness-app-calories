@@ -21,7 +21,6 @@ export interface Workout {
 
 export interface DayActivity {
   day: string;
-  steps: number;
   calories: number;
   isToday: boolean;
 }

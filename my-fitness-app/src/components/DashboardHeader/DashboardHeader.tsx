@@ -1,10 +1,10 @@
-import './DashboardHeader.css';
+import "./DashboardHeader.css";
 
 export default function DashboardHeader() {
-  const today = new Date().toLocaleDateString('en-US', {
-    weekday: 'long',
-    month: 'long',
-    day: 'numeric',
+  const today = new Date().toLocaleDateString("en-US", {
+    weekday: "long",
+    month: "long",
+    day: "numeric",
   });
 
   return (

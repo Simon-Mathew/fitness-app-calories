@@ -1,0 +1,81 @@
+/* ── Panel ──────────────────────────────────────────────────────────────── */
+
+.ql-panel {
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.ql-panel__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.ql-panel__title {
+  margin: 0 0 4px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-h);
+  letter-spacing: -0.3px;
+}
+
+.ql-panel__subtitle {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text);
+}
+
+/* ── Button grid ────────────────────────────────────────────────────────── */
+
+.ql-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+@media (max-width: 400px) {
+  .ql-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.ql-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 18px 8px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  cursor: pointer;
+  font-family: var(--sans);
+  transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
+}
+
+.ql-btn:hover {
+  border-color: var(--accent-border);
+  box-shadow: 0 0 0 3px var(--accent-bg);
+  transform: translateY(-2px);
+}
+
+.ql-btn:active {
+  transform: translateY(0);
+}
+
+.ql-btn__icon {
+  font-size: 26px;
+  line-height: 1;
+}
+
+.ql-btn__label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-h);
+  text-align: center;
+}

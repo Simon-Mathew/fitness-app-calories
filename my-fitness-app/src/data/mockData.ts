@@ -2,16 +2,6 @@ import type { StatCardData, Workout, DayActivity, Goal } from '../types/fitness'
 
 export const stats: StatCardData[] = [
   {
-    id: 'steps',
-    label: 'Steps',
-    value: '8,432',
-    unit: 'steps',
-    icon: '👟',
-    progress: 84,
-    goal: '10,000',
-    color: 'var(--accent)',
-  },
-  {
     id: 'calories',
     label: 'Calories Burned',
     value: '612',
@@ -44,13 +34,13 @@ export const stats: StatCardData[] = [
 ];
 
 export const weekActivity: DayActivity[] = [
-  { day: 'Mon', steps: 9200,  calories: 720, isToday: false },
-  { day: 'Tue', steps: 7500,  calories: 580, isToday: false },
-  { day: 'Wed', steps: 11000, calories: 890, isToday: false },
-  { day: 'Thu', steps: 6200,  calories: 490, isToday: false },
-  { day: 'Fri', steps: 8432,  calories: 612, isToday: true  },
-  { day: 'Sat', steps: 0,     calories: 0,   isToday: false },
-  { day: 'Sun', steps: 0,     calories: 0,   isToday: false },
+  { day: 'Mon', calories: 720, isToday: false },
+  { day: 'Tue', calories: 580, isToday: false },
+  { day: 'Wed', calories: 890, isToday: false },
+  { day: 'Thu', calories: 490, isToday: false },
+  { day: 'Fri', calories: 612, isToday: true  },
+  { day: 'Sat', calories: 0,   isToday: false },
+  { day: 'Sun', calories: 0,   isToday: false },
 ];
 
 export const recentWorkouts: Workout[] = [
@@ -67,10 +57,8 @@ export const goals: Goal[] = [
 ];
 
 export const weeklySummary = {
-  totalSteps:    '42,332',
   totalCalories: '3,291 kcal',
   activeDays:    '4 / 7',
 };
 
-export const MAX_STEPS = 12000;
 export const MAX_CALORIES = 1000;

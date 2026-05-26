@@ -1,0 +1,123 @@
+/* ── Panel ──────────────────────────────────────────────────────────────── */
+
+.goals-panel {
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.goals-panel__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.goals-panel__title {
+  margin: 0 0 4px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-h);
+  letter-spacing: -0.3px;
+}
+
+.goals-panel__subtitle {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text);
+}
+
+.goals-panel__link {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-size: 14px;
+  font-family: var(--sans);
+  font-weight: 600;
+  cursor: pointer;
+  padding: 4px 0;
+  transition: opacity 0.15s;
+}
+
+.goals-panel__link:hover {
+  opacity: 0.7;
+}
+
+.goals-panel__list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* ── Goal item ──────────────────────────────────────────────────────────── */
+
+.goal-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.goal-item__header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.goal-item__icon {
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.goal-item__text {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.goal-item__title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.goal-item__fraction {
+  font-size: 12px;
+  color: var(--text);
+}
+
+.goal-item__pct {
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+/* progress bar */
+.goal-item__track {
+  height: 8px;
+  border-radius: 99px;
+  background: var(--border);
+  overflow: hidden;
+}
+
+.goal-item__fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 99px;
+  transition: width 0.7s ease;
+}
